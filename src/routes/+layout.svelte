@@ -7,7 +7,11 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+</svelte:head>
 
 <div class="flex min-h-screen flex-col">
 	<header class="sticky top-0 z-10 border-b border-border bg-bg/85 backdrop-blur">
