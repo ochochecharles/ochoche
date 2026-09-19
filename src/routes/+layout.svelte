@@ -36,8 +36,11 @@
 						title={link.label}
 						class="transition-colors hover:text-accent"
 					>
-						<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
-							><path d={link.icon} /></svg
+						<svg
+							width={18 * (link.scale ?? 1)}
+							height={18 * (link.scale ?? 1)}
+							viewBox="0 0 24 24"
+							fill="currentColor"><path d={link.icon} /></svg
 						>
 					</a>
 				{/each}

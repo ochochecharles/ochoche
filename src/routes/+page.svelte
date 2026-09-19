@@ -27,8 +27,11 @@
 				title={link.label}
 				class="text-muted transition-colors hover:text-accent"
 			>
-				<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
-					><path d={link.icon} /></svg
+				<svg
+					width={22 * (link.scale ?? 1)}
+					height={22 * (link.scale ?? 1)}
+					viewBox="0 0 24 24"
+					fill="currentColor"><path d={link.icon} /></svg
 				>
 			</a>
 		{/each}
